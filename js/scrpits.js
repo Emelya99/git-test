@@ -21,3 +21,20 @@ salaryBtn.addEventListener('click', () => {
         salaryInput.value = '';
     }
 });
+
+// Reduce()
+// prev a[0]
+const a = [1,2,3];
+const sum = a.reduce((prev,item) => prev+item,0);
+console.log(sum);
+
+const b = [1,5,4,34,12,32,3,2];
+const maxNumber = b.reduce((prev, item) => {
+    if (prev < item){
+        return item;
+    } else{
+        return prev;
+    }
+},0);
+
+console.log(maxNumber);
